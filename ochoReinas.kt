@@ -50,7 +50,7 @@ fun solveNQUtil(board: Array<IntArray>, col: Int): Boolean {
             board[i][col] = 1
             if (solveNQUtil(board, col + 1) == true) return true
 
-            board[i][col] = 0 // BACKTRACK
+            board[i][col] = 0 
         }
     }
 
